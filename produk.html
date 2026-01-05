@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk evi & azmi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333333;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666666;
+            margin: 10px 0 0 0;
+        }
+
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Product Card */
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            justify-content: center;
+            min-height: 120px;
+            text-decoration: none;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Product Info */
+        .product-info {
+            text-align: center;
+            width: 100%;
+        }
+
+        .product-name {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333333;
+            margin: 0 0 4px 0;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-description {
+            font-size: 11px;
+            color: #666666;
+            margin: 0 0 4px 0;
+            line-height: 1.2;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: normal;
+        }
+
+        .product-price {
+            font-size: 13px;
+            font-weight: bold;
+            color: #e91e63;
+            margin: 0 0 6px 0;
+        }
+
+        /* Order Button */
+        .order-button {
+            background-color: #25D366;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 11px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .order-button:hover {
+            background-color: #128C7E;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333333;
+            color: #ffffff;
+            font-size: 12px;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .products-grid {
+                gap: 8px;
+                padding: 8px;
+            }
+
+            .product-card {
+                padding: 12px;
+                min-height: 100px;
+            }
+
+            .product-name {
+                font-size: 13px;
+            }
+
+            .product-description {
+                font-size: 10px;
+            }
+
+            .product-price {
+                font-size: 12px;
+            }
+
+            .order-button {
+                padding: 6px 12px;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">🛒 Produk evi & azmi</h1>
+        <p class="subtitle">Klik tombol ORDER untuk memesan via WhatsApp</p>
+    </header>
+
+    <main class="products-grid">
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 5-9gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 20.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 5-9gb promo%20-%20Rp%2020.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 10-14gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 25.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 10-14gb promo%20-%20Rp%2025.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 15-19gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 30.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 15-19gb promo%20-%20Rp%2030.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 20-24gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 35.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 20-24gb promo%20-%20Rp%20350.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+       <!-- Produk 1 -->
+       <div class="product-card">
+        <div class="product-info">
+            <h3 class="product-name">xl 25-29gb promo</h3>
+            <p class="product-description">paket full utama 24 jam</p>
+            <p class="product-description">exp 28 hari</p>
+            <p class="product-price">Rp 40.000</p>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 25-29gb promo%20-%20Rp%2040.000" class="order-button" target="_blank">
+                ORDER
+            </a>
+        </div>
+    </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 30-34gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 47.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 30-34gb promo%20-%20Rp%2047.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 35-39gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 50.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 35-39gb promo%20-%20Rp%2050.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 40-44gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 55.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 40-44gb promo%20-%20Rp%2055.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 45-49gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 60.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 45-49gb promo%20-%20Rp%2060.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 5-9gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 20.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20Sepatu%20Sneaker%20Premium%20-%20Rp%20250.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 50-54gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 65.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 50-54gb promo%20-%20Rp%2065.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+        <!-- Produk 1 -->
+        <div class="product-card">
+            <div class="product-info">
+                <h3 class="product-name">xl 80-84gb promo</h3>
+                <p class="product-description">paket full utama 24 jam</p>
+                <p class="product-description">exp 28 hari</p>
+                <p class="product-price">Rp 95.000</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20order%20xl 50-54gb promo%20-%20Rp%2095.000" class="order-button" target="_blank">
+                    ORDER
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Toko Online Anda. All rights reserved.</p>
+    </footer>
+</body>
+</html>
